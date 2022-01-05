@@ -1,0 +1,107 @@
+:root {
+  --red: #e50914;
+  --black: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body {
+  background: var(--black);
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+}
+
+main {
+  margin-bottom: 20px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: var(--red);
+  font-family: 'Arial Black';
+  font-size: 40px;
+  margin-left: 5px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 10px;
+  font-size: 1.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/*manga principal*/
+.main-manga {
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%);
+  background-size: contain;
+  height: 400px;
+}
+
+.main-manga .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.container img {
+  height: 400px;
+  max-height: 400px;
+}
+
+.description {
+  width: 70%;
+}
+
+.description .title {
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.description p {
+  margin-bottom: 20px;
+}
+
+.main-button {
+  background-color: rgba(45, 45, 45, 0.5);
+  border: none;
+  color: #fff;
+
+  padding: 15px 30px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.main-button:hover {
+  background-color: white;
+  color: var(--black);
+}
+
+.main-button i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.box-manga {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
